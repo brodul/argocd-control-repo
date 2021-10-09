@@ -1,0 +1,12 @@
+apiVersion: v2
+name: brodul-wordpress
+description: My personal wordpress
+
+type: application
+version: 0.1.0
+
+
+dependencies:
+- name: wordpress
+  version: 12.1.20
+  repository: https://charts.bitnami.com/bitnami
