@@ -1,1 +1,3 @@
-echo-server: {}
+echo-server:
+  service:
+    type: "LoadBalancer"
