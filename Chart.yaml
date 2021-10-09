@@ -1,0 +1,11 @@
+apiVersion: v2
+name: echo
+description: Echo the HTTP request
+type: application
+
+version: 0.1.0
+
+dependencies:
+- name: echo-server
+  version: 0.3.1
+  repository: https://ealenn.github.io/charts
