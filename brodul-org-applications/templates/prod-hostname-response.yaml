@@ -17,3 +17,5 @@ spec:
     path: response-hostname
     repoURL: https://github.com/brodul/argocd-control-repo.git
     targetRevision: HEAD
+  syncPolicy:
+      automated: {}
