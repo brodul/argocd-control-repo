@@ -14,7 +14,7 @@ spec:
     helm:
       values: |
         service:
-          type: "ClusterIP"
+          type: "LoadBalancer"
     chart: response-hostname
     repoURL: https://helm3.brodul.org
     targetRevision: 0.1.6
