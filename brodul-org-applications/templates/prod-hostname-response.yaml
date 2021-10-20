@@ -12,11 +12,12 @@ spec:
   project: default
   source:
     helm:
-      valueFiles:
-      - values-prod.yaml
-    path: response-hostname
-    repoURL: https://github.com/brodul/argocd-control-repo.git
-    targetRevision: HEAD
+      parameters:
+      - name: autoscaling.enabled
+        value: "true"
+    chart: response-hostname
+    repoURL: https://helm3.brodul.org
+    targetRevision: 0.1.6
   syncPolicy:
       automated: {}
       syncOptions:
