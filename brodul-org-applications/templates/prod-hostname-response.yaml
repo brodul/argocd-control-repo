@@ -12,9 +12,9 @@ spec:
   project: default
   source:
     helm:
-      parameters:
-      - name: autoscaling.enabled
-        value: "true"
+      values: |
+        service:
+          type: "ClusterIP"
     chart: response-hostname
     repoURL: https://helm3.brodul.org
     targetRevision: 0.1.6
