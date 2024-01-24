@@ -1,3 +1,0 @@
-response-hostname:
-  service:
-    type: "LoadBalancer"
